@@ -1,6 +1,8 @@
 # EthicsAnalysis
 
-Research notebooks for analyzing public AI-ethics datasets with LLMs. The work has two parts:
+This repository contains the code used for the paper **"A Schema for AI Ethics Datasets: Analyzing and Evaluating Existing Datasets for Value Alignment in Generative AI"** by Yerin Lee and Seongjin Ahn (submitted to *Ethics and Information Technology*). See [Citation](#citation).
+
+It consists of research notebooks for analyzing public AI-ethics datasets with LLMs. The work has two parts:
 
 1. **EthicsPrinciples** — Use an LLM to label each item in several ethics datasets with one of five AI ethics principles (Transparency, Accountability, Fairness, Controllability, Safety).
 2. **ValueAlignmentEval** — Collect binary (0/1) moral judgments from several commercial and open LLMs on the five ETHICS benchmark tasks, to compare their value alignment.
@@ -122,6 +124,19 @@ All notebooks follow the same pattern: async requests with `asyncio` in batches 
 - Dataset CSVs and result CSVs are not included in this repository. Download the datasets from the sources listed under [Data availability](#data-availability).
 - Do not commit API keys in the notebooks. The local key file `apikey` is excluded via `.gitignore`.
 
+## Citation
+
+If you use this code, please cite:
+
+```bibtex
+@unpublished{lee2026schema,
+  title  = {A Schema for AI Ethics Datasets: Analyzing and Evaluating Existing Datasets for Value Alignment in Generative AI},
+  author = {Lee, Yerin and Ahn, Seongjin},
+  year   = {2026},
+  note   = {Submitted to Ethics and Information Technology}
+}
+```
+
 ## Data availability
 
 The datasets analyzed in this study are publicly available:
@@ -133,17 +148,4 @@ The datasets analyzed in this study are publicly available:
 
 ## References
 
-```bibtex
-@article{so2021classification,
-  title     = {A study on the classification model and components of artificial intelligence ethical principles},
-  author    = {So, S. and Ahn, S.},
-  journal   = {The Journal of Korean Association of Computer Education},
-  volume    = {24},
-  number    = {6},
-  pages     = {119--132},
-  year      = {2021},
-  doi       = {10.32431/kace.2021.24.6.010},
-  url       = {https://doi.org/10.32431/kace.2021.24.6.010},
-  note      = {In Korean}
-}
-```
+- So, S., & Ahn, S. (2021). A study on the classification model and components of artificial intelligence ethical principles [in Korean]. *The Journal of Korean Association of Computer Education, 24*(6), 119–132. https://doi.org/10.32431/kace.2021.24.6.010
